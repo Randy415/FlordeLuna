@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flor de Luna</title>
+ <link rel="stylesheet" type="text/css" href="css/menu.css" />
+ <link rel="stylesheet" type="text/css" href="css/as.css" />
+ <link rel="icon" href="img/logo2.ico">
+</head>
+<body bgcolor=#c7fdff>
+    <header>  
+        <img src="img/baner.png"  width="100%" height="auto" max-width="100" max-height="100" >
+         <nav class="menu">
+          <ul>
+          <li> <a href="vintae.html">Vintae </a></li>
+          <li> <a href="formulario.html">Contacto</a></li>
+          <li> <a href="cv.html">Tienda Online </a></li>    
+          <li> <a href="index.html">Inicio </a></li>
+          </ul>   
+        </nav>
+    </header>
+
+<img src="img/flor1.png"  width="30%" height="auto" max-width="50" max-height="100">
+    <p><a style="font-size: 30px;">Jarron de flores</a> 
+    <a style="font-size: 25px; ;">5.00$</a></p>
+    <form id="purchaseForm">
+        <p>
+          <label>Nombre:</label><br>
+          <input type="text" id="name" required>
+        </p>
+        <p>
+          <label>Dirección de Envío:</label><br>
+          <input type="text" id="address" required>
+        </p>
+        <p>
+          <label>Correo Electrónico:</label><br>
+          <input type="email" id="email" required>
+        </p>
+        <button type="submit">Comprar</button>
+      </form>
+    
+      <script>
+        document.getElementById('purchaseForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+    
+          const name = document.getElementById('name').value;
+          const address = document.getElementById('address').value;
+          const email = document.getElementById('email').value;
+    
+          alert(`Gracias, ${name}. Tu compra del Ramo de Flores será enviada a: ${address}.`);
+          this.reset();
+        });
+      </script>
+</body>
+</html>
