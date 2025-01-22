@@ -4,3 +4,48 @@
     padding: 15px 35px; 
     color: black;
 }
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+.card {
+    background-color: #ecfbff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+.card:hover {
+    transform: scale(1.05);
+  }
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+.card-content {
+    padding: 15px;
+  }
+
+.card-content h3 {
+    color: #d9534f;
+    margin-bottom: 10px;
+  }
+
+.card-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
